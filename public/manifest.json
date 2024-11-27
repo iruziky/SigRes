@@ -1,6 +1,6 @@
 {
-  "short_name": "MeuApp",
-  "name": "Minha Aplicação Web",
+  "short_name": "SigRes",
+  "name": "Sistema de Restaurantes",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
