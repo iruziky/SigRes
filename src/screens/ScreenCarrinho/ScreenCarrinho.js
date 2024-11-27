@@ -9,7 +9,25 @@ export default function ScreenCarrinho() {
     return (
         <>
             <Header tema={'verde'} imageSrc={'/images/carrinhoGrande.svg'} tituloPagina={'Carrinho'}/>
-            <Produtos/>
+            <Produtos
+                produtos={[
+                    { 
+                        nome: 'Espaguete à Carbonara', 
+                        preco: '39', 
+                        iconePath: '/images/garfo.svg'
+                    },
+                    { 
+                        nome: 'Frango Grelhado com Batatas', 
+                        preco: '29', 
+                        iconePath: '/images/garfo.svg'
+                    },
+                    { 
+                        nome: 'Pizza Marguerita', 
+                        preco: '39', 
+                        iconePath: '/images/garfo.svg'
+                    }
+                ]}
+            />
             <Link to='/mesas'><div className='botaoConfirmar'><p>Confirmar</p></div></Link>
             
             <Footer
