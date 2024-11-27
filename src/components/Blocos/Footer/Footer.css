@@ -1,0 +1,50 @@
+.FooterSpacing {
+    height: 11vh;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: min(80px, 20vw);
+    background: #313030;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: min(40px, 10vw);
+}
+  
+.botao{
+    width: min(30px, 7vw);
+    align-items: center;
+}
+
+.botaoMaior{
+    width: min(40px, 9vw);
+    align-items: center;
+}
+
+.FooterIconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FooterIconName {
+    color: #C8C8C8;
+    translate: no;
+}
+
+.FooterIconLink {
+    text-decoration: none;
+    outline: none;
+}
+
+.FooterIconLink:focus {
+    outline: none;
+}
+
+.FooterIconName {
+    font-size: min(12px, 3vw);
+}

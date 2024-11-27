@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+.Registro {
+    width: min(350px, 85vw);
+    height: min(60px, 15vw);
+    border: 1px solid black;
+}
+
+.horario {
+    background-color: white;
+    width: max-content;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: min(10px, 2vw);
+    border-right: min(7px, 2vw) solid white;
+    border-left: min(7px, 2vw) solid white;
+}
+
+.horario p {
+    font-size: min(16px, 4vw);
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 20%;
+    transform: translateY(-20%);
+    font-family: "Poppins";
+}
+
+.informacoes img {
+    height: min(25px, 6vw);
+}
+
+.produto {
+    font-size: min(16px, 4vw);
+}
+
+.quantidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero {
+    font-size: min(20px, 5vw);
+    margin-bottom: min(-5px, 1vw);
+}
+
+.unidades {
+    font-size: min(10px, 2.5vw);
+}
+               

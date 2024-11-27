@@ -1,0 +1,11 @@
+.Historico {
+    display: flex;
+    margin-left: min(30px, 5.2vw);
+    margin-right: min(30px, 5.2vw);
+    margin-top: min(30px, 5.2vw);
+    row-gap: min(10px, 2.4vw);
+    align-items: center;
+    justify-content: center;
+    gap: min(10px, 3vw);
+    flex-wrap: wrap;
+}

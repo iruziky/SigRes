@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+.Produto {
+    width: min(350px, 85vw);
+    height: min(90px, 21.8vw);
+    border-radius: min(10px, 2.4vw);
+    border: 1px solid #DCDCDC;
+    background: linear-gradient(181deg, white 0.49%, #D0D0D0 400.6%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Informacoes {
+    display: flex;
+    gap: min(20px, 4.8vw);
+    align-items: center;
+}
+
+.Informacoes img {
+    width: min(30px, 7vw);
+    margin-left: min(10px, 2.4vw);
+}
+
+.Textos {
+    height: 100%;
+    width: min(140px, 34vw);
+    display: flex;
+    flex-direction: column;
+    gap: min(2px, 0.5vw);
+    justify-content: center;
+}
+
+.Textos h1 {
+    color: #000;
+    font-family: "Poppins";
+    font-weight: 500;
+    line-height: min(18px, 5vw);
+    font-size: min(16px, 4vw);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Textos p {
+    color: #000;
+    font-family: "Poppins";
+    font-size: min(14px, 3.4vw);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Textos p span {
+    color: #26A116;
+}
+
+.Botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: min(5px, 1.2vw);
+    padding-right: min(10px, 2.4vw);
+}
+
+.Contador {
+    display: flex;
+    gap: min(5px, 1.2vw);
+}
+
+.Menos {
+    display: flex;
+    width: min(35px, 8.5vw);
+    height: min(35px, 8.5vw);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #FF593B;
+    border: 1px solid #FF593B;
+}
+
+.Painel {
+    display: flex;
+    width: min(55px, 13.3vw);
+    height: min(35px, 8.5vw);
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #818181;
+}
+
+.Mais {
+    display: flex;
+    width: min(35px, 8.5vw);
+    height: min(35px, 8.5vw);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #1FD307;
+    border: 1px solid #1FD307;
+}
+
+.Observacoes {
+    display: inline-flex;
+    height: min(27px, 6.6vw);
+    justify-content: center;
+    align-items: center;
+    gap: min(10px, 2.4vw);
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #8C8C8C;
+    background: rgba(234, 234, 234, 0.00);
+}
+
+.Botoes p {
+    font-family: "Poppins";
+    font-size: min(14px, 3.4vw);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Mais p {
+    color: white;
+}
+
+.Menos p {
+    color: white;
+}

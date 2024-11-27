@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: "PressStart2P";
+    src: url('../../fontes/PressStart2P.ttf') format('truetype');
+}
+
+.ScreenLgoin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    width: min(350px, 85vw);
+    height: min(672px, 163vw);
+    background: linear-gradient(172deg, white 72.15%, rgba(240, 29, 29, 0.55) 146.71%);
+    stroke-width: 1px;
+    stroke: #D8D8D8;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: min(20px, 5vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Quadradrinhoo {
+    width: min(100px, 24vw);
+    height: min(100px, 24vw);
+    background: #FF593C;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: min(20px, 5vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImgGarcom {
+    height: min(80px, 20vw);
+}
+
+.NomeSistemaa {
+    margin: 0;
+    color: #535353;
+    font-family: "PressStart2P";
+    font-size: min(40px, 10vw);
+    font-weight: 400;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: min(20px, 5vw);
+    position: absolute;
+    top: 23%;
+    transform: translate(0%, -50%);
+}
+
+.textoInformativo {
+    margin-left: min(2px, 2px/412vw); /* Aplicado min() para margin-left */
+    color: #0C172B;
+    font-family: "Poppins";
+    font-size: min(16px, 4vw);
+    text-transform: capitalize;
+}
+
+.campoInput {
+    width: min(320px, 77vw);
+    height: min(50px, 12vw);
+    border-radius: 8px;
+    border: 1px solid #0C172B;
+    padding-left: min(10px, 2.5vw);
+    box-sizing: border-box;
+}
+
+.containerInputs {
+    display: flex;
+    flex-direction: column;
+    gap: min(7px, 2vw);
+    margin-top: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.botaoEntrar {
+    display: flex;
+    width: min(320px, 77vw);
+    height: min(50px, 12vw);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #E3583F;
+
+    color: var(--foreground-onColor, #FCFCFD);
+    font-family: "Poppins";
+    font-size: min(16px, 4vw);
+    font-weight: 600;
+}
+
+.campoInput::placeholder {
+    margin-left: 10px;
+    color: #0C172B;
+    font-family: "Poppins";
+    font-size: min(14px, 4vw);
+}
+
+.campoInput:focus::placeholder {
+    color: rgb(153, 155, 156); /* Muda a cor quando o input está em foco */
+}
+
+.IconLink {
+    text-decoration: none;
+    outline: none;
+}

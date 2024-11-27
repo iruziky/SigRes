@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Mesas from './screens/ScreenMesas/ScreenMesas';
+import Produtos from './screens/ScreenProdutos/ScreenProdutos';
+import Carrinho from './screens/ScreenCarrinho/ScreenCarrinho';
+import Historico from './screens/ScreenHistorico/ScreenHistorico';
+import Login from './screens/ScreenLogin/ScreenLogin';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/mesas" element={<Mesas />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/carrinho" element={<Carrinho />} />
+          <Route path="/historico" element={<Historico />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 

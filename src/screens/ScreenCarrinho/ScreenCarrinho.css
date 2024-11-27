@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+.botaoConfirmar {
+    display: flex;
+    width: min(352px, 85.2vw);
+    height: 64px;
+    border-radius: min(10px, 2.4vw);
+    border: 1px solid #DCDCDC;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: linear-gradient(142deg, #76C25A 60.96%, #309E14 105.94%);
+    position: fixed;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botaoConfirmar p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

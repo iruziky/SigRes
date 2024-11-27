@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Poppins";
+  src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url('../../../fontes/PressStart2P.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.tema-verde {
+  --bg-color: #75C25A;
+  --quadrado-color: #3EC62C;
+}
+
+.tema-laranja {
+  --bg-color: #E3583F;
+  --quadrado-color: #FF593C;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Topo {
+  width: 100%;
+  height: min(113px, 27vw);
+  display: flex;
+  background: var(--bg-color);
+}
+
+.NomeSistema {
+  margin-left: min(30px, 7vw);
+  margin-top: min(30px, 7vw);
+  color: var(--background-mode, #FFF);
+  font-family: "PressStart2P";
+  font-size: min(25px, 6vw);
+}
+
+.Quadradrinho {
+  margin-top: max(-49px, -12vw);
+  width: min(98px, 24vw);
+  height: min(98px, 24vw);
+  background: var(--quadrado-color);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: min(20px, 5vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ImgMesa {
+  width: min(66px, 16vw);
+}
+
+.ImgGarcom {
+  height: min(81px, 20vw);
+}
+
+.ImgCarrinho {
+  height: min(64px, 16vw);
+}
+
+.ImgHistorico {
+  height: min(64px, 16vw);
+}
+
+.TituloTela {
+  color: #303030;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: min(36px, 9vw);;
+}

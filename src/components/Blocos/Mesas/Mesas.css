@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+.Mesas {
+    margin-left: min(30px, 7vw);
+    margin-right: min(30px, 7vw);
+    margin-top: min(30px, 7vw);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: min(16px, 3vw);
+}
+  
+.Mesa {
+    width: min(104px, 25vw);
+    height: min(80px, 19vw);
+    border-radius: min(10px, 2vw);
+    border: 1px solid #979797;
+    background: linear-gradient(142deg, #D9D9D9 60.96%, #C2C2C2 105.94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Para transição suave ao clicar */
+}
+  
+.Mesa p {
+    display: flex;
+    color: #000;
+    font-family: "Poppins";
+    font-size: min(40px, 10vw);
+}
+
+.Mesa.selecionada {
+    background: linear-gradient(142deg, #76C25A 60.96%, #309E14 105.94%);
+}
+
+.Mesa .numeroSelecionado {
+    color: white;
+}
