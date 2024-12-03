@@ -61,6 +61,10 @@
     justify-content: center;
     gap: min(5px, 1.2vw);
     padding-right: min(10px, 2.4vw);
+    -webkit-user-select: none; /* Para Safari */
+    -moz-user-select: none; /* Para Firefox */
+    -ms-user-select: none; /* Para Internet Explorer */
+    user-select: none; /* Para a maioria dos navegadores modernos */
 }
 
 .Contador {

@@ -1,0 +1,9 @@
+/* Bloqueia a seleção de texto apenas em telas com largura mínima de 768px (geralmente para tablets e dispositivos maiores) */
+@media (max-width: 768px) {
+    body {
+        -webkit-user-select: none; /* Para Safari */
+        -moz-user-select: none; /* Para Firefox */
+        -ms-user-select: none; /* Para Internet Explorer */
+        user-select: none; /* Para a maioria dos navegadores modernos */
+    }
+}

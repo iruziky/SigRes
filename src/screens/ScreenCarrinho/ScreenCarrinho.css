@@ -14,7 +14,7 @@
     box-sizing: border-box;
     background: linear-gradient(142deg, #76C25A 60.96%, #309E14 105.94%);
     position: fixed;
-    top: 87%;
+    bottom: min(80px, 20vw);
     left: 50%;
     transform: translate(-50%, -50%);
 }
