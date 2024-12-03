@@ -5,13 +5,11 @@ import Produtos from '../../components/Blocos/Produtos/Produtos'
 import { Link } from 'react-router-dom';
 
 export default function ScreenCarrinho() {
-    // Recupera todos os itens no localStorage que são os produtos
     const produtosNoLocalStorage = Object.keys(localStorage).map((key) => {
-        const produto = JSON.parse(localStorage.getItem(key)); // Recupera o objeto do produto
+        const produto = JSON.parse(localStorage.getItem(key));
         return produto;
     });
 
-    // Filtra apenas os produtos com quantidade maior que 0
     const produtosComQuantidade = produtosNoLocalStorage.filter(produto => produto.quantidade > 0);
 
     return (

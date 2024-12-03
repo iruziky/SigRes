@@ -13,6 +13,13 @@
     justify-content: space-between;
 }
 
+
+@media (max-width: 773px) {
+    .Produto {
+        width: 100%;
+    }
+}
+
 .Informacoes {
     display: flex;
     gap: min(20px, 4.8vw);
