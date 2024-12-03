@@ -1,3 +1,10 @@
+* {
+    -webkit-user-select: none; /* Para Safari */
+    -moz-user-select: none; /* Para Firefox */
+    -ms-user-select: none; /* Para Internet Explorer */
+    user-select: none; /* Para a maioria dos navegadores modernos */
+}
+
 .FooterSpacing {
     height: 11vh;
 }
