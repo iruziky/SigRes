@@ -2,10 +2,10 @@ import Header from '../../components/Blocos/Header/Header'
 import Historico from '../../components/Blocos/Historico/Historico'
 import Footer from '../../components/Blocos/Footer/Footer'
 
-export default function ScreenHistorico() {
+export default function ScreenHistorico( {numeroMesa} ) {
     return (
         <>
-            <Header tema={'laranja'} imageSrc={'/images/historicoGrande.svg'} tituloPagina={'Historico'}/>
+            <Header numeroMesa={numeroMesa} tema={'laranja'} imageSrc={'/images/garcom.svg'} tituloPagina={'Produtos'}/>
             <Historico/>
             <Footer
                 icons={[

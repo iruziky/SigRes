@@ -8,7 +8,7 @@
     src: url('../../fontes/PressStart2P.ttf') format('truetype');
 }
 
-.ScreenLgoin {
+.ScreenLogin {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -99,6 +99,7 @@
     align-items: center;
     border-radius: 8px;
     background: #E3583F;
+    margin-top: min(10px, 2.5vw);
 
     color: var(--foreground-onColor, #FCFCFD);
     font-family: "Poppins";

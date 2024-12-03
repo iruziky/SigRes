@@ -3,7 +3,7 @@
     src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
 }
 
-.Mesas {
+.mesas {
     margin-left: min(30px, 7vw);
     margin-right: min(30px, 7vw);
     margin-top: min(30px, 7vw);
@@ -13,7 +13,7 @@
     gap: min(16px, 3vw);
 }
   
-.Mesa {
+.mesa {
     width: min(104px, 25vw);
     height: min(80px, 19vw);
     border-radius: min(10px, 2vw);
@@ -25,17 +25,17 @@
     transition: background-color 0.3s ease; /* Para transição suave ao clicar */
 }
   
-.Mesa p {
+.mesa p {
     display: flex;
     color: #000;
     font-family: "Poppins";
     font-size: min(40px, 10vw);
 }
 
-.Mesa.selecionada {
+.mesaSelecionada {
     background: linear-gradient(142deg, #76C25A 60.96%, #309E14 105.94%);
 }
 
-.Mesa .numeroSelecionado {
+.mesaSelecionada p {
     color: white;
 }

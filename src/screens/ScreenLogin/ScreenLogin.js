@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function ScreenLogin() {
     return (
-        <div className="ScreenLgoin">
+        <div className="ScreenLogin">
             <div className='Container'>
                 
                 <div className='topo'>

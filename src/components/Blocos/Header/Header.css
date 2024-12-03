@@ -35,6 +35,7 @@
   height: min(113px, 27vw);
   display: flex;
   background: var(--bg-color);
+  justify-content: space-between;
 }
 
 .NomeSistema {
@@ -42,6 +43,13 @@
   margin-top: min(30px, 7vw);
   color: var(--background-mode, #FFF);
   font-family: "PressStart2P";
+  font-size: min(25px, 6vw);
+}
+
+.numeroMesa {
+  margin-right: min(30px, 7vw);
+  margin-top: min(30px, 7vw);
+  color: var(--background-mode, #FFF);
   font-size: min(25px, 6vw);
 }
 

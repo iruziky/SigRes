@@ -6,7 +6,21 @@ export default function ScreenMesa() {
     return (
         <>
             <Header tema={'laranja'} imageSrc={'/images/mesa.svg'} tituloPagina={'Mesas'}/>
-            <Mesas quantidadeMesas={15}/>
+            <Mesas
+                props={[
+                    {
+                        mesaOcupada: true, 
+                        numeroMesa: "1"
+                    },
+                    {
+                        mesaOcupada: false, 
+                        numeroMesa: "2"
+                    },
+                    {
+                        mesaOcupada: false, 
+                        numeroMesa: "3"
+                    },
+                ]}/>
             <Footer
                 icons={[
                     { 
