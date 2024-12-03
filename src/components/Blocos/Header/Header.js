@@ -1,9 +1,16 @@
 import './Header.css';
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Header({ imageSrc, tema, tituloPagina}) {
     const location = useLocation();
     const pathname = location.pathname
+
+    useEffect(() => {
+        if (pathname === "/mesas") {
+            localStorage.clear();
+        }
+    }, [pathname]);
 
     const temaClass = tema === "verde" ? "tema-verde" : "tema-laranja";
     const numeroMesa = localStorage.getItem('numeroMesa');

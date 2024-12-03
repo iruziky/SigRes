@@ -1,33 +1,52 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Produto.css';
 
-export default function Produto({ nomeProduto, preco, iconePath}) {
-    // Definindo o estado para a quantidade
-    const [quantidade, setQuantidade] = useState(0);
+export default function Produto({ nomeProduto, preco, iconePath }) {
+    // Inicializa o estado com os dados armazenados no localStorage (caso existam)
+    const [produto, setProduto] = useState(() => {
+        const savedProduct = localStorage.getItem(nomeProduto);
+        return savedProduct ? JSON.parse(savedProduct) : { nome: nomeProduto, preco, iconePath, quantidade: 0 };
+    });
 
-    // Função para aumentar a quantidade
     const aumentarQuantidade = () => {
-        setQuantidade(prevQuantidade => prevQuantidade + 1);
+        setProduto(prevProduto => {
+            const newProduto = { ...prevProduto, quantidade: prevProduto.quantidade + 1 };
+            // Armazenar o objeto completo no localStorage
+            localStorage.setItem(nomeProduto, JSON.stringify(newProduto));
+            return newProduto;
+        });
     };
 
-    // Função para diminuir a quantidade
     const diminuirQuantidade = () => {
-        setQuantidade(prevQuantidade => (prevQuantidade > 0 ? prevQuantidade - 1 : 0)); // Impede que a quantidade seja negativa
+        setProduto(prevProduto => {
+            const newProduto = { ...prevProduto, quantidade: prevProduto.quantidade > 0 ? prevProduto.quantidade - 1 : 0 };
+            // Armazenar o objeto completo no localStorage
+            localStorage.setItem(nomeProduto, JSON.stringify(newProduto));
+            return newProduto;
+        });
     };
+
+    // Atualiza o estado caso o nome do produto mude
+    useEffect(() => {
+        const savedProduct = localStorage.getItem(nomeProduto);
+        if (savedProduct) {
+            setProduto(JSON.parse(savedProduct));
+        }
+    }, [nomeProduto]);
 
     return (
         <div className='Produto'>
             <div className='Informacoes'>
-                <img src={iconePath} alt="Descrição do PNG" />
+                <img src={produto.iconePath} alt="Descrição do PNG" />
                 <div className='Textos'>
-                    <h1>{nomeProduto}</h1>
-                    <p>Preço: <span>R${preco}</span></p>
+                    <h1>{produto.nome}</h1>
+                    <p>Preço: <span>R${produto.preco}</span></p>
                 </div>
             </div>
             <div className='Botoes'>
                 <div className='Contador'>
                     <div className='Menos' onClick={diminuirQuantidade}><p>-</p></div>
-                    <div className='Painel'><p>{quantidade}</p></div>
+                    <div className='Painel'><p>{produto.quantidade}</p></div>
                     <div className='Mais' onClick={aumentarQuantidade}><p>+</p></div>
                 </div>
                 <div className='Observacoes'>

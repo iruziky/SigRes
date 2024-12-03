@@ -10,7 +10,7 @@ export default function Produtos({ produtos }) {
                     key={index} 
                     nomeProduto={produto.nome} 
                     preco={produto.preco} 
-                    iconePath={produto.iconePath} 
+                    iconePath={produto.iconePath}
                 />
             ))}
         </div>
