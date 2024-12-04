@@ -1,8 +1,8 @@
 .Produtos {
     display: flex;
-    margin-left: min(30px, 5.2vw);
-    margin-right: min(30px, 5.2vw);
-    margin-top: min(30px, 5.2vw);
+    margin-left: min(30px, 7vw);
+    margin-right: min(30px, 7vw);
+    margin-top: min(10px, 2.5vw);
     row-gap: min(10px, 2.4vw);
     align-items: center;
     justify-content: center;

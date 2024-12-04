@@ -1,17 +1,18 @@
+import Observacao from '../Observacao/Observacao';
 import { useState, useEffect } from 'react';
 import './Produto.css';
 
 export default function Produto({ nomeProduto, preco, iconePath }) {
-    // Inicializa o estado com os dados armazenados no localStorage (caso existam)
     const [produto, setProduto] = useState(() => {
         const savedProduct = localStorage.getItem(nomeProduto);
         return savedProduct ? JSON.parse(savedProduct) : { nome: nomeProduto, preco, iconePath, quantidade: 0 };
     });
 
+    const [mostrarObservacao, setMostrarObservacao] = useState(false);
+
     const aumentarQuantidade = () => {
         setProduto(prevProduto => {
             const newProduto = { ...prevProduto, quantidade: prevProduto.quantidade + 1 };
-            // Armazenar o objeto completo no localStorage
             localStorage.setItem(nomeProduto, JSON.stringify(newProduto));
             return newProduto;
         });
@@ -20,13 +21,11 @@ export default function Produto({ nomeProduto, preco, iconePath }) {
     const diminuirQuantidade = () => {
         setProduto(prevProduto => {
             const newProduto = { ...prevProduto, quantidade: prevProduto.quantidade > 0 ? prevProduto.quantidade - 1 : 0 };
-            // Armazenar o objeto completo no localStorage
             localStorage.setItem(nomeProduto, JSON.stringify(newProduto));
             return newProduto;
         });
     };
 
-    // Atualiza o estado caso o nome do produto mude
     useEffect(() => {
         const savedProduct = localStorage.getItem(nomeProduto);
         if (savedProduct) {
@@ -49,10 +48,12 @@ export default function Produto({ nomeProduto, preco, iconePath }) {
                     <div className='Painel'><p>{produto.quantidade}</p></div>
                     <div className='Mais' onClick={aumentarQuantidade}><p>+</p></div>
                 </div>
-                <div className='Observacoes'>
+                <div className='Observacoes' onClick={() => setMostrarObservacao(!mostrarObservacao)}>
                     <p>Observações</p>
                 </div>
             </div>
+
+            {mostrarObservacao && <Observacao onClose={() => setMostrarObservacao(false)} />}
         </div>
     );
 }

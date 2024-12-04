@@ -5,7 +5,7 @@ import SearchBox from '../../components/Elementos/SearchBox/SearchBox'
 
 export default function ScreenProdutos() {
     return (
-        <>
+        <> 
             <Header tema={'laranja'} imageSrc={'/images/garcom.svg'} tituloPagina={'Produtos'}/>
             <SearchBox/>
             <Produtos
