@@ -1,12 +1,13 @@
 import Header from '../../components/Blocos/Header/Header'
 import Produtos from '../../components/Blocos/Produtos/Produtos'
 import Footer from '../../components/Blocos/Footer/Footer'
+import SearchBox from '../../components/Elementos/SearchBox/SearchBox'
 
 export default function ScreenProdutos() {
     return (
         <>
             <Header tema={'laranja'} imageSrc={'/images/garcom.svg'} tituloPagina={'Produtos'}/>
-            <input type="text" placeholder='digite'></input>
+            <SearchBox/>
             <Produtos
                 produtos={[
                     { 

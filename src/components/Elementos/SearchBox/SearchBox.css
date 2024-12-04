@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Poppins";
+    src: url('../../../fontes/Poppins-Regular.ttf') format('truetype');
+}
+
+.SearchBox {
+    margin-left: min(30px, 5.2vw);
+    margin-right: min(30px, 5.2vw);
+}
+
+.SearchBox input{
+    height: min(50px, 12vw);
+    border-radius: 8px;
+    border: 1px solid #0C172B;
+    padding-left: min(10px, 2.5vw);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "Poppins";
+}
