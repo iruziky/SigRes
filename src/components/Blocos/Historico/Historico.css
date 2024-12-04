@@ -30,7 +30,7 @@
 .horario {
     background-color: white;
     width: max-content;
-    transform: translateY(-60%);
+    transform: translateY(-55%);
     margin-left: min(10px, 2vw);
     border-right: min(7px, 2vw) solid white;
     border-left: min(7px, 2vw) solid white;
