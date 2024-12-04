@@ -1,14 +1,24 @@
 import './Historico.css';
 
-import Registro from '../../Elementos/Registro/Registro'
-
-export default function Historico() {
+export default function Historico( {props} ) {
     return (
         <div className='Historico'>
-            <Registro/>
-            <Registro/>
-            <Registro/>
-            <Registro/>
+            {props.map((prop) => (
+                <div className='Registro'>
+                    <div className='container'>
+                        <div className='horario'><p>{prop.horario}</p></div>
+                        
+                        <div className='informacoes'>
+                            <img src={prop.icone} alt="Descrição do PNG"/>
+                            <p className='produto'>{prop.nomePrato}</p>
+                            <div className='quantidade'>
+                                <p className='numero'>{prop.quantidade}</p>
+                                <p className='unidades'>Unidades</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))}
         </div>
     )
 }

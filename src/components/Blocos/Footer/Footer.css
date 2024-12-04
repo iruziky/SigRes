@@ -46,6 +46,7 @@
 .FooterIconLink {
     text-decoration: none;
     outline: none;
+    width: 40px;
 }
 
 .FooterIconLink:focus {
