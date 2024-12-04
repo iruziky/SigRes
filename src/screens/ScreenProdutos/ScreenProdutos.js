@@ -6,6 +6,7 @@ export default function ScreenProdutos() {
     return (
         <>
             <Header tema={'laranja'} imageSrc={'/images/garcom.svg'} tituloPagina={'Produtos'}/>
+            <input type="text" placeholder='digite'></input>
             <Produtos
                 produtos={[
                     { 
