@@ -1,0 +1,8 @@
+.campoInput {
+    width: min(320px, 77vw);
+    height: min(50px, 12vw);
+    border-radius: 8px;
+    border: 1px solid #0C172B;
+    padding-left: min(10px, 2.5vw);
+    box-sizing: border-box;
+}

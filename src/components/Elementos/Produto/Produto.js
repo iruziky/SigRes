@@ -2,7 +2,7 @@ import Observacao from '../Observacao/Observacao';
 import { useState, useEffect } from 'react';
 import './Produto.css';
 
-export default function Produto({ nomeProduto, preco, iconePath }) {
+export default function Produto({ nomeProduto, preco, iconePath, estiloPersonalizado, estiloOcultar, estiloBotoes }) {
     const [produto, setProduto] = useState(() => {
         const savedProduct = localStorage.getItem(nomeProduto);
         return savedProduct ? JSON.parse(savedProduct) : { nome: nomeProduto, preco, iconePath, quantidade: 0 };
@@ -34,21 +34,21 @@ export default function Produto({ nomeProduto, preco, iconePath }) {
     }, [nomeProduto]);
 
     return (
-        <div className='Produto'>
+        <div className='Produto' style={estiloPersonalizado}>
             <div className='Informacoes'>
-                <img src={produto.iconePath} alt="Descrição do PNG" />
+                <img src={produto.iconePath} style={estiloOcultar} alt="Descrição do PNG" />
                 <div className='Textos'>
                     <h1>{produto.nome}</h1>
                     <p>Preço: <span>R${produto.preco}</span></p>
                 </div>
             </div>
-            <div className='Botoes'>
+            <div className='Botoes' style={estiloBotoes}>
                 <div className='Contador'>
                     <div className='Menos' onClick={diminuirQuantidade}><p>-</p></div>
                     <div className='Painel'><p>{produto.quantidade}</p></div>
                     <div className='Mais' onClick={aumentarQuantidade}><p>+</p></div>
                 </div>
-                <div className='Observacoes' onClick={() => setMostrarObservacao(!mostrarObservacao)}>
+                <div className='Observacoes' style={estiloOcultar} onClick={() => setMostrarObservacao(!mostrarObservacao)}>
                     <p>Observações</p>
                 </div>
             </div>

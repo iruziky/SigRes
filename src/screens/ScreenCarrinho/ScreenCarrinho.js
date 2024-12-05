@@ -1,7 +1,7 @@
-import './ScreenCarrinho.css'
 import Header from '../../components/Blocos/Header/Header'
 import Footer from '../../components/Blocos/Footer/Footer'
 import Produtos from '../../components/Blocos/Produtos/Produtos'
+import BotaoConfirmar from '../../components/Elementos/botaoConfirmar/botaoConfirmar'
 import { Link } from 'react-router-dom';
 
 export default function ScreenCarrinho() {
@@ -19,9 +19,7 @@ export default function ScreenCarrinho() {
                 produtos={produtosComQuantidade} // Passa os produtos com quantidade maior que 0
             />
             <Link to='/mesas'>
-                <div className='botaoConfirmar'>
-                    <p>Confirmar</p>
-                </div>
+                <BotaoConfirmar/>
             </Link>
             
             <Footer
