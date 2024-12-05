@@ -67,7 +67,7 @@ export default function ScreenHistorico( {numeroMesa} ) {
                         alt: 'Buscar', 
                         className: 'botao', 
                         name: 'Buscar',
-                        link: ''
+                        link: '/produtos'
                     },
                     { 
                         src: 'images/registration.svg', 

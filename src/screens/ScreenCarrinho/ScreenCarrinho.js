@@ -36,7 +36,7 @@ export default function ScreenCarrinho() {
                         alt: 'Chat', 
                         className: 'botao', 
                         name: 'Chat',
-                        link: ''
+                        link: '/produtos'
                     },
                     { 
                         src: 'images/search.svg', 
