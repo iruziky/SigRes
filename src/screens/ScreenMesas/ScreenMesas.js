@@ -8,18 +8,16 @@ export default function ScreenMesa() {
             <Header tema={'laranja'} imageSrc={'/images/mesa.svg'} tituloPagina={'Mesas'}/>
             <Mesas
                 props={[
-                    {
-                        mesaOcupada: true, 
-                        numeroMesa: "1"
-                    },
-                    {
-                        mesaOcupada: false, 
-                        numeroMesa: "2"
-                    },
-                    {
-                        mesaOcupada: false, 
-                        numeroMesa: "3"
-                    },
+                    { mesaOcupada: true, numeroMesa: "1" },
+                    { mesaOcupada: false, numeroMesa: "2" },
+                    { mesaOcupada: false, numeroMesa: "3" },
+                    { mesaOcupada: true, numeroMesa: "4" },
+                    { mesaOcupada: false, numeroMesa: "5" },
+                    { mesaOcupada: true, numeroMesa: "6" },
+                    { mesaOcupada: false, numeroMesa: "7" },
+                    { mesaOcupada: true, numeroMesa: "8" },
+                    { mesaOcupada: false, numeroMesa: "9" },
+                    { mesaOcupada: true, numeroMesa: "10" },
                 ]}/>
             <Footer
                 icons={[
@@ -31,7 +29,7 @@ export default function ScreenMesa() {
                         link: '/'
                     },
                     { 
-                        src: 'images/chat-botton.svg', 
+                        src: 'images/chat.svg', 
                         alt: 'Chat', 
                         className: 'botao', 
                         name: 'Chat'

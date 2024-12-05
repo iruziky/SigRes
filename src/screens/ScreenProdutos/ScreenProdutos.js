@@ -121,7 +121,7 @@ export default function ScreenProdutos() {
                 icons={[
                     { 
                         src: 'images/home.svg', 
-                        alt: 'Mesas', 
+                        alt: 'Início', 
                         className: 'botao',
                         name: 'Início',
                         link: '/mesas'

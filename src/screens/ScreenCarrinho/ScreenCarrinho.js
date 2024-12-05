@@ -25,42 +25,41 @@ export default function ScreenCarrinho() {
             <Footer
                 icons={[
                     { 
-                        src: 'images/mesaPequena.svg', 
-                        alt: 'Mesas', 
+                        src: 'images/home.svg', 
+                        alt: 'Início', 
                         className: 'botao',
-                        name: 'Mesas',
+                        name: 'Início',
                         link: '/mesas'
                     },
                     { 
-                        src: 'images/chat-botton.svg', 
+                        src: 'images/chat.svg', 
                         alt: 'Chat', 
                         className: 'botao', 
                         name: 'Chat',
                         link: ''
                     },
                     { 
-                        src: 'images/buscar.svg', 
+                        src: 'images/search.svg', 
                         alt: 'Buscar', 
-                        className: 'botaoMaior', 
+                        className: 'botao', 
                         name: 'Buscar',
-                        link: '/produtos'
+                        link: ''
                     },
                     { 
-                        src: 'images/historico.svg', 
+                        src: 'images/registration.svg', 
                         alt: 'Histórico', 
                         className: 'botao', 
                         name: 'Histórico',
                         link: '/historico'
                     },
                     { 
-                        src: 'images/carrinho.svg', 
+                        src: 'images/shoppingCart.svg', 
                         alt: 'Carrinho', 
                         className: 'botao', 
                         name: 'Carrinho',
                         link: '/carrinho'
                     },
-                ]}
-            />
+                ]}/>
         </>
     );
 }
