@@ -1,7 +1,6 @@
-
 # 🍽️ App de Pedidos para Garçom  
 📍 Projeto Acadêmico — UFRN | 2024.2  
-🔗 [Acesse o repositório no GitHub](https://github.com/iruziky/SigRes)
+🔗 [Acesse o projeto clicando aqui!](https://sigress.netlify.app/)
 
 > ⚡ Aplicativo web progressivo (PWA) desenvolvido para otimizar o processo de atendimento em restaurantes, permitindo que garçons façam pedidos diretamente pelo celular de forma rápida e eficiente.
 
